@@ -2,7 +2,7 @@ const data = [
   {
     id: 'a',
     src: '/images/vincent-van-zalinge-bird.jpg',
-    alt: 'A tiny shrewd turquoise-and-amber bird',
+    alt: 'A turquiose and golden bird, resting on a wooden branch',
     tags: [
       'bird',
       'blurred background',
@@ -13,13 +13,13 @@ const data = [
   {
     id: 'b',
     src: '/images/alexandru-rotariu-dog.jpg',
-    alt: 'A serious-looking grey dog with cool glacier eyes',
+    alt: 'A serious-looking dog, with gray fur and light blue eyes',
     tags: ['dog', 'HD'],
   },
   {
     id: 'c',
     src: '/images/scott-walsh-fox.jpg',
-    alt: 'A happy-looking cute wild fox in nature, near some pink flowers',
+    alt: 'A cheerful-looking golden fox, walking near some pink flowers',
     tags: ['fox', 'flowers'],
   },
   {
@@ -31,19 +31,19 @@ const data = [
   {
     id: 'e',
     src: '/images/karsten-winegeart-dog.jpg',
-    alt: 'A small dog wearing a golden "Champions" hoodie',
+    alt: 'A pug wearing a "Champion" hoodie, sitting down and looking back',
     tags: ['dog', 'cute', 'animal wearing human clothes'],
   },
   {
     id: 'f',
     src: '/images/marko-blazevic-cat.jpg',
-    alt: 'A small kitten standing on its back legs, reaching up towards the camera',
+    alt: 'A scared cat, standing on two legs facing the camera',
     tags: ['kitten', 'cat', '#cute'],
   },
   {
     id: 'g',
     src: '/images/mark-stoop-lizard.jpg',
-    alt: 'A relaxed green lizard, sitting on a wooden beam',
+    alt: 'A green lizard, resting on a wooden beam',
     tags: [
       'lizard',
       'world-famous insurance salesman from the commercials',
@@ -52,13 +52,13 @@ const data = [
   {
     id: 'h',
     src: '/images/geran-de-klerk-squirrel.jpg',
-    alt: 'A fuzzy squirrel, highlighted in a dark backdrop',
+    alt: 'A golden, fuzzy squirrel highlighted by a black backdrop',
     tags: ['squirrel', 'animal', 'fuzzy'],
   },
   {
     id: 'i',
     src: '/images/wexor-tmg-turtle.jpg',
-    alt: 'A large tropical turtle swimming in water',
+    alt: 'A turtle with a brown shell swimming in the ocean',
     tags: ['turtle', 'ocean', 'flippers'],
   },
 ];
