@@ -4,31 +4,10 @@ import styled from 'styled-components/macro';
 import ImageWithFallback from '../ImageWithFallback';
 
 const PhotoGridItem = ({ id, src, alt, tags }) => {
-  const srcToSrcSet = (src, type) => {
-    src = src.replace(".jpg", "");
-    const format = type === "image/avif" ? "avif" : "jpg";
-    return `${src}.${format} 1x, ${src}@2x.${format} 2x, ${src}@3x.${format} 3x`;
-  }
-
-  const sources = [{
-    key: 1,
-    type: "image/avif",
-    srcset: srcToSrcSet(src, "image/avif"),
-  },
-  {
-    key: 2,
-    type: "image/jpeg",
-    srcset: srcToSrcSet(src, "image/jpeg"),
-  }]
-
   return (
     <GridItem>
       <Anchor href={`/photos/${id}`}>
-        <Image 
-        sources={sources}
-        alt={alt}
-        src={src}
-        />
+        <Image alt={alt} src={src} />
       </Anchor>
       <Tags>
         {tags.map((tag) => (
@@ -67,7 +46,6 @@ const Tags = styled.ul`
 
 const Tag = styled.li`
   display: inline;
-  margin: 0 4px;
   padding: 4px 8px;
   line-height: calc(1rem + 8px);
   background: var(--color-gray-300);
@@ -76,8 +54,8 @@ const Tag = styled.li`
   color: var(--color-gray-800);
   border-radius: 4px;
 
-  &:first-of-type {
-    margin: 0 4px 0 0;
+  &:not(:last-of-type) {
+    margin-right: 8px;
   }
 `;
 

@@ -4,22 +4,10 @@ import styled from 'styled-components/macro';
 import ImageWithFallback from '../ImageWithFallback';
 
 const Hero = () => {
-  const sources = [{
-                    key: 1,
-                    type: "image/avif",
-                    srcset: "/images/hero-img.avif 1x, /images/hero-img@2x.avif 2x, /images/hero-img@3x.avif 3x",
-                  },
-                  {
-                    key: 2,
-                    type: "image/jpeg",
-                    srcset: "/images/hero-img.jpg 1x, /images/hero-img@2x.jpg 2x, /images/hero-img@3x.jpg 3x",
-                  }]
-
   return (
     <Wrapper>
       <HeroImage 
-        sources={sources}
-        alt="A yellow inqusitive cat with blue eyes"
+        alt="An example of a photo distributed through this site (A yellow inqusitive cat with blue eyes)"
         src="/images/hero-img.jpg"
         />
       <Swoop alt="" src="/swoop.svg" />
